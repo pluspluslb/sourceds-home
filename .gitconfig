@@ -1,0 +1,12 @@
+[core]
+	autocrlf = input
+[user]
+	email = sourceds@source.ds
+	name = ++SourceDS
+[alias]
+	st = status
+	co = checkout
+	br = branch
+[credential]
+	helper = cache --timeout=3600
+

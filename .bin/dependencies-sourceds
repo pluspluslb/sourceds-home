@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo apt-get update && sudo apt-get -y install build-essential libgcc1:i386 lib32z1 lib32ncurses5 lib32bz2-1.0 screen 

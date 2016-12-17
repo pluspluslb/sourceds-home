@@ -1,0 +1,5 @@
+#!/bin/bash
+rm -rfv $HOME/steamcmd_linux*
+wget http://media.steampowered.com/client/steamcmd_linux.tar.gz
+tar -vzxf steamcmd_linux.tar.gz -C $HOME/
+rm steamcmd_linux.tar.gz 
