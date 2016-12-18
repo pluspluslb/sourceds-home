@@ -1,0 +1,20 @@
+#!/bin/bash
+if [ -z "$1" ]
+then
+    PORT=27015
+    MAP=buhriz
+    BOTS=0
+elif [ -z "$2" ]
+then
+    MAP=$1
+elif [ -z "$3" ]
+then
+    MAP=$1	
+    PORT=$2
+else
+    MAP=$1	
+    PORT=$2
+    BOTS=$3
+fi
+
+$HOME/insurgency/srcds_run -game insurgency -port $PORT -console +ins_bot_quota $BOTS +maxplayers 24 +map $MAP

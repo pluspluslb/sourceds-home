@@ -1,14 +1,2 @@
 #!/bin/sh
-if [ -z "$1" ]
-then
-    PORT=27015
-    MAP=ctf_turbine
-elif [ -z "$2" ]
-then
-    MAP=$1
-else
-    MAP=$1	
-    PORT=$2
-fi
-
-screen -m -S tf2 $HOME/tf2/srcds_run -command update -game tf -console -port $PORT +sv_pure 1 +map $MAP +maxplayers 18
+screen -x tf2 || screen -m -S tf2 $HOME/.bin/runtf2 $@ 

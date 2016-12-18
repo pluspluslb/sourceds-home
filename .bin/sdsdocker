@@ -1,0 +1,2 @@
+docker run -v $HOME:/home/sourceds -p 27015:27015/udp -t -i -d sds-server $@ 
+

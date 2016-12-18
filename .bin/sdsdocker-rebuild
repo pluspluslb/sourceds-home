@@ -1,0 +1,3 @@
+sds-docker-killall
+docker rmi sds-server
+docker build -t sds-server $HOME/docker

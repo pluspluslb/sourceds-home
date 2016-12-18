@@ -1,2 +1,2 @@
-#!/bin/bash
-cd $HOME/insurgency && ./start.sh $1 $2 $3 && cd -
+#!/bin/sh
+screen -x insurgency || screen -m -S insurgency $HOME/.bin/runinsurgency $@
