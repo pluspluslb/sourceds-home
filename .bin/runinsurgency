@@ -3,7 +3,7 @@ if [ -z "$1" ]
 then
     PORT=27015
     MAP=buhriz
-    BOTS=0
+    BOTS=10
 elif [ -z "$2" ]
 then
     MAP=$1
