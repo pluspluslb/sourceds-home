@@ -2,7 +2,7 @@
 if [ -z "$1" ]
 then
     PORT=27015
-    MAP=ctf_turbine
+    MAP=ctf_2fort
 elif [ -z "$2" ]
 then
     MAP=$1
@@ -11,4 +11,4 @@ else
     PORT=$2
 fi
 
-$HOME/tf2/srcds_run -command update -game tf -console -port $PORT +sv_pure 1 +map $MAP +maxplayers 18
+$HOME/tf2/srcds_run -game tf -console -port $PORT +sv_pure 1 +map $MAP +maxplayers 18
