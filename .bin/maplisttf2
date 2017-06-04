@@ -1,2 +1,2 @@
 #!/bin/bash
-ls $HOME/tf2/tf/maps/*.bsp
+maplist "$HOME/tf2/tf/maps/"
