@@ -30,6 +30,6 @@
 !tf2/tf/cfg/server-security.cfg
 !tf2/tf/cfg/mapcycle.txt
 !tf2/tf/maps/
-!tf2/tf/maps/ctf_2fort.nav
+!tf2/tf/maps/*.nav
 
 *.DS_Store

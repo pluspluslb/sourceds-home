@@ -2,7 +2,7 @@
 if [ -z "$1" ]
 then
     PORT=27015
-    MAP=ctf_2fort
+    MAP=koth_badlands
 elif [ -z "$2" ]
 then
     MAP=$1

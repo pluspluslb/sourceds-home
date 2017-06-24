@@ -1,1 +1,3 @@
-ctf_2fort
+//koth_nucleus
+koth_badlands
+//cp_degrootkeep
