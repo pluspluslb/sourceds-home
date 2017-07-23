@@ -1,3 +1,4 @@
+cp_granary
 //koth_nucleus
-koth_badlands
+//koth_badlands
 //cp_degrootkeep

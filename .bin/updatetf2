@@ -6,10 +6,10 @@ while getopts ":v" opt; do
       ;;
   esac
 done
-$HOME/steamcmd.sh \
+/home/sourceds/steamcmd.sh \
 +@ShutdownOnFailedCommand 1 \
 +@NoPromptForPassword 1 \
 +login anonymous \
-+force_install_dir $HOME/tf2/ \
++force_install_dir /home/sourceds/tf2/ \
 +app_update 232250 $VERIFY_FLAG \
 +quit

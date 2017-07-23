@@ -1,14 +1,17 @@
 #!/bin/sh
 if [ -z "$1" ]
 then
-    PORT=27015
-    MAP=koth_badlands
-elif [ -z "$2" ]
-then
-    MAP=$1
+    MAP="+randommap"
 else
-    MAP=$1	
+    echo $1 > $HOME/tf2/tf/cfg/mapcycle.tmp
+    MAP="+map $1 +mapcyclefile mapcycle.tmp"
+fi
+
+if [ -z "$2" ]
+then
+    PORT=27015
+else
     PORT=$2
 fi
 
-$HOME/tf2/srcds_run -game tf -console -port $PORT +sv_pure 1 +map $MAP +maxplayers 18
+$HOME/tf2/srcds_run -game tf -console -port $PORT +sv_pure 1 $MAP +maxplayers 10
