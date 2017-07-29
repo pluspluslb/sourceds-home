@@ -1,0 +1,8 @@
+#!/bin/bash
+echo EXAMPLE CRONTAB:
+
+echo "0 1 * * * /home/sourceds/.bin/exec-screen exit"
+echo "45 14 * * * /home/sourceds/.bin/exec-screen exit"
+echo "50 14 * * * /home/sourceds/.bin/updatetf2 -v"
+echo "0 15 * * * /home/sourceds/.bin/screentf2"
+echo "0 8 * * * /home/sourceds/.bin/screentf2"

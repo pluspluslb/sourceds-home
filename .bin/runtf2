@@ -14,4 +14,4 @@ else
     PORT=$2
 fi
 
-$HOME/tf2/srcds_run -game tf -console -port $PORT +sv_pure 1 $MAP +maxplayers 10
+$HOME/tf2/srcds_run -game tf -console -port $PORT +sv_pure 1 $MAP +maxplayers 18
