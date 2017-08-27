@@ -1,0 +1,2 @@
+#!/bin/sh
+screen -x gmod || screen -m -S gmod $HOME/.bin/rungmod $@

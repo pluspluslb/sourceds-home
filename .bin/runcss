@@ -1,0 +1,1 @@
+css/srcds_run -game cstrike +maxplayers 10 +map cs_office

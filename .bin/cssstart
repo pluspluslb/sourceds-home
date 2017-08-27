@@ -1,0 +1,2 @@
+#!/bin/sh
+screen -x css || screen -m -S css $HOME/.bin/runcss $@
