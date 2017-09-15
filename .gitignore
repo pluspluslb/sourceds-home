@@ -31,5 +31,6 @@
 !tf2/tf/cfg/mapcycle.txt
 !tf2/tf/maps/
 !tf2/tf/maps/*.nav
+!tf2/tf/maps/boxing_ring.bsp
 
 *.DS_Store

@@ -1,5 +1,5 @@
 #!/bin/sh
-$HOME
+$HOME/.bin/updatetf2
 
 if [ -z "$1" ]
 then
