@@ -1,0 +1,6 @@
+#!/bin/bash -e
+rm -fr .steam/sdk32
+cp -r $HOME/linux32 .steam/sdk32
+rm -fr .steam/sdk64
+cp -r $HOME/linux64 .steam/sdk64
+

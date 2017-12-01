@@ -1,2 +1,2 @@
-#!/bin/sh
+#!/bin/sh -e
 screen -x tf2 || screen -m -S tf2 $HOME/.bin/runtf2 $@ 

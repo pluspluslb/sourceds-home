@@ -1,1 +1,3 @@
-css/srcds_run -game cstrike +maxplayers 10 +map cs_office
+#!/bin/bash
+$HOME/.bin/updatecss
+css/srcds_run -game cstrike +maxplayers 10 +map de_dust2 +port 27016
