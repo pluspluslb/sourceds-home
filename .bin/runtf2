@@ -9,11 +9,11 @@ else
     MAP="+map $1 +mapcyclefile mapcycle.tmp"
 fi
 
-if [ -z "$2" ]
+if [ -z "$TF2PORT" ]
 then
-    PORT=27015
+    TF2PORT=27015
 else
-    PORT=$2
+    TF2PORT=$2
 fi
-
-$HOME/tf2/srcds_run -game tf -console -port $PORT +sv_pure 1 $MAP +maxplayers 18
+echo running at port TF2PORT=$TF2PORT with map $MAP
+$HOME/tf2/srcds_run -game tf -console -port $TF2PORT +sv_pure 1 $MAP +maxplayers 18

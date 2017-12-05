@@ -1,20 +1,14 @@
 #!/bin/bash
-if [ -z "$1" ]
-then
-    PORT=27015
+if [ -z "$1" ]; then
     MAP=buhriz
-    BOTS=10
-elif [ -z "$2" ]
-then
-    MAP=$1
-elif [ -z "$3" ]
-then
-    MAP=$1	
-    PORT=$2
 else
     MAP=$1	
-    PORT=$2
-    BOTS=$3
 fi
 
-$HOME/insurgency/srcds_run -game insurgency -port $PORT -console +ins_bot_quota $BOTS +maxplayers 24 +map $MAP
+if [ -z "$INSPORT" ]; then
+    INSPORT=27015 
+fi  
+
+echo running at port INSPORT=$INSPORT with map $MAP
+
+$HOME/insurgency/srcds_run -game insurgency -port $INSPORT -console +ins_bot_quota 10 +maxplayers 24 +map $MAP

@@ -1,20 +1,18 @@
 #!/bin/sh
+$HOME/.bin/updatecsgo
+
 ## Mode                       game_mode    game_type
 ## Classic Casual             0            0
 ## Classic Competitive        0            1
 ## Arms Race                  1            0
 ## Demolition                 1            1
 
-if [ -z "$1" ]
-then
-    PORT=27015
-    MAP=de_dust2
-elif [ -z "$2" ]
-then
-    MAP=$1
-else
-    MAP=$1	
-    PORT=$2
+if [ -z "$CSGOPORT" ]; then
+    CSGOPORT=27015
 fi
 
-$HOME/csgo/srcds_run -game csgo -console -usercon -port $PORT +maxplayers 10 +game_mode 0 +game_type 0 +mapgroup mg_active +map $MAP 
+if [ -z "$1" ]; then
+    MAP=de_dust2
+fi
+echo running on port CSGOPORT=$CSGOPORT with map $MAP
+$HOME/csgo/srcds_run -game csgo -console -usercon -port $CSGOPORT +maxplayers 10 +game_mode 0 +game_type 0 +mapgroup mg_active +map $MAP 

@@ -1,3 +1,14 @@
 #!/bin/bash
 $HOME/.bin/updatecss
-css/srcds_run -game cstrike +maxplayers 10 +map de_dust2 +port 27016
+
+if [ -z "$CSSPORT" ]; then
+    CSSPORT=27015
+fi
+
+if [ -z "$1" ]; then
+    MAP=de_dust2
+fi
+
+echo running at port CSSPORT=$CSSPORT with map $MAP
+
+css/srcds_run -game cstrike +maxplayers 10 +map $MAP +port $CSSPORT
