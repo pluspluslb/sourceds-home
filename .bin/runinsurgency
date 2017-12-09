@@ -1,4 +1,5 @@
 #!/bin/bash
+$HOME/.bin/updateinsurgency
 if [ -z "$1" ]; then
     MAP=buhriz
 else
