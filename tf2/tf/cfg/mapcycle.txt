@@ -1,7 +1,9 @@
 //cp_granary
 //koth_nucleus
-//koth_badlands
+koth_badlands
 //cp_degrootkeep
 //koth_king
 //koth_lake
-koth_suijin
+//koth_suijin
+koth_probed
+koth_lakeside_event

@@ -21,6 +21,7 @@ if [ -d "$HOME/.bin" ] ; then
     PATH="$HOME/.bin:$PATH"
 fi
 
+# export TF2PORT=27072
 export TF2PORT=27015
 export CSSPORT=27016
 export CSGOPORT=27017

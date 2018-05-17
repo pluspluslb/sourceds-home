@@ -15,4 +15,4 @@ if [ -z "$1" ]; then
     MAP=de_dust2
 fi
 echo running on port CSGOPORT=$CSGOPORT with map $MAP
-$HOME/csgo/srcds_run -game csgo -console -usercon -port $CSGOPORT +maxplayers 10 +game_mode 0 +game_type 0 +mapgroup mg_active +map $MAP 
+$HOME/csgo/srcds_run -game csgo -console -usercon -port $CSGOPORT +maxplayers 10 +game_mode 0 +game_type 0 +mapgroup mg_active +map $MAP -tickrate 128 
