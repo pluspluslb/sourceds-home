@@ -33,4 +33,10 @@
 !tf2/tf/maps/*.nav
 !tf2/tf/maps/boxing_ring.bsp
 
+!rust/
+!rust/server/
+!rust/server/my_server_identity/
+!rust/server/my_server_identity/cfg/
+!rust/server/my_server_identity/cfg/server.cfg
+
 *.DS_Store

@@ -1,0 +1,2 @@
+#!/bin/sh
+screen -x rust || screen -m -S rust $HOME/.bin/runrust $@
