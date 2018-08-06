@@ -4,8 +4,7 @@ scripts and configs for tf2, csgo, and insurgency on source dedicated server
 
 **get started**
 
-sudo apt update && sudo apt -y install git build-essential libgcc1 lib32z1 lib32ncurses5 libbz2-1.0 screen lib32stdc++6
-
+sudo apt update && sudo apt -y install git build-essential libgcc1 lib32z1 lib32ncurses5 libbz2-1.0 screen lib32stdc++6 libtinfo5:i386 libncurses5:i386 libcurl3-gnutls:i386
 sudo adduser sourceds
 
 sudo su - sourceds
