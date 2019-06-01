@@ -1,2 +1,2 @@
 #!/bin/bash
-screen -ls | grep 'csgo\|tf2\|insurgency'
+screen -ls | grep --color=always 'csgo\|tf2\|insurgency'
