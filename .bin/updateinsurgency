@@ -6,7 +6,7 @@ while getopts ":v" opt; do
       ;;
   esac
 done
-$HOME/steamcmd.sh \
+steamcmd \
 +@ShutdownOnFailedCommand 1 \
 +@NoPromptForPassword 1 \
 +login anonymous \
