@@ -1,8 +1,8 @@
 [core]
 	autocrlf = input
 [user]
-	email = sourceds@source.ds
-	name = ++SourceDS
+	email = pluspluslb@gmail.com
+	name = ++
 [alias]
 	st = status
 	co = checkout
