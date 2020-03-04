@@ -1,5 +1,9 @@
 #!/bin/bash
-sudo apt-get update 
+
+sudo dpkg --add-architecture i386
+sudo add-apt-repository multiverse
+sudo apt-get update
+sudo apt-get dist-upgrade
 
 sudo apt install steamcmd build-essential libgcc1:i386 lib32z1 lib32ncurses5 libbz2-1.0 lib32stdc++6 libstdc++6:i386 libssl1.0.0:i386 libstdc++6:i386 libssl1.0.0:i386 libcurl3-gnutls libcurl3-gnutls:i386 tmux screen
 
