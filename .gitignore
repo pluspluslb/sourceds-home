@@ -16,6 +16,11 @@
 !csgo/csgo/cfg/server.cfg
 !csgo/csgo/cfg/server-security.cfg
 !csgo/csgo/cfg/gamemode_casual_server.cfg
+!css/cstrike/cfg/server.cfg
+!css/
+!css/cstrike/
+!css/cstrike/cfg/
+!css/cstrike/cfg/server.cfg
 !insurgency/
 !insurgency/insurgency/
 !insurgency/insurgency/start.sh
