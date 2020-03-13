@@ -12,4 +12,4 @@ fi
 
 echo running at port INSPORT=$INSPORT with map $MAP
 
-$HOME/insurgency/srcds_run -game insurgency -port $INSPORT -console +ins_bot_quota 0 +maxplayers 24 +map $MAP
+$HOME/insurgency/srcds_run -game insurgency -port $INSPORT -console +ins_bot_quota 13 +maxplayers 24 +map $MAP
