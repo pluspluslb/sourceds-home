@@ -1,5 +1,5 @@
 #!/bin/bash
-$HOME/.bin/updatecs
+#$HOME/.bin/updatecs
 
 if [ -z "$CSPORT" ]; then
     CSPORT=27015
@@ -10,5 +10,5 @@ if [ -z "$1" ]; then
 fi
 
 echo running at port CSPORT=$CSPORT with map $MAP
-
-cs/hlds_linux -game cstrike -console +maxplayers 10 +map $MAP +port $CSPORT #  +sv_lan 1
+cd $HOME/cs
+./hlds_linux -game -console cstrike +maxplayers 10 +map $MAP +port $CSPORT #  +sv_lan 1 -noipx -nomaster -noupdate -insecure

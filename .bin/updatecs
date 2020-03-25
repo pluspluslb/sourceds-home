@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash -e
+
+
 while getopts ":v" opt; do
   case $opt in
     v)
