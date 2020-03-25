@@ -1,0 +1,2 @@
+#!/bin/sh
+screen -x cs || screen -m -S cs $HOME/.bin/runcs $@

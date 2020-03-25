@@ -1,0 +1,16 @@
+#!/bin/sh
+while getopts ":v" opt; do
+  case $opt in
+    v)
+          VERIFY_FLAG=validate
+      ;;
+  esac
+done
+steamcmd \
++@ShutdownOnFailedCommand 1 \
++@NoPromptForPassword 1 \
++login anonymous \
++force_install_dir /home/sourceds/cs/ \
++app_update 90 $VERIFY_FLAG \
++quit
+
