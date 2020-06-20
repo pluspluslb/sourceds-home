@@ -21,6 +21,7 @@
 !css/cstrike/
 !css/cstrike/cfg/
 !css/cstrike/cfg/server.cfg
+!css/cstrike/cfg/server-security.cfg
 !insurgency/
 !insurgency/insurgency/
 !insurgency/insurgency/start.sh
