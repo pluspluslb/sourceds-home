@@ -12,7 +12,7 @@ steamcmd \
 +@ShutdownOnFailedCommand 1 \
 +@NoPromptForPassword 1 \
 +login anonymous \
-+force_install_dir /home/sourceds/cs/ \
++force_install_dir /home/sourceds/csog/ \
 +app_update 90 $VERIFY_FLAG \
 +quit
 

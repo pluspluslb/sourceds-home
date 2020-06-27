@@ -1,0 +1,2 @@
+#!/bin/sh
+screen -x csog || screen -m -S csog $HOME/.bin/runcsog $@

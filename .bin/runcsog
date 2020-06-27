@@ -1,0 +1,14 @@
+#!/bin/bash
+$HOME/.bin/updatecsog
+
+if [ -z "$CSOGPORT" ]; then
+    CSOGPORT=27015
+fi
+
+if [ -z "$1" ]; then
+    MAP=de_dust
+fi
+
+echo running at port CSOGPORT=$CSOGPORT with map $MAP
+cd $HOME/csog
+./hlds_linux -game -console cstrike +maxplayers 10 +map $MAP +port $CSOGPORT #  +sv_lan 1 -noipx -nomaster -noupdate -insecure
