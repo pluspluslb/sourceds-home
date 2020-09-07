@@ -22,8 +22,8 @@ if [ -d "$HOME/.bin" ] ; then
 fi
 
 export CSOGPORT=27014
-export TF2PORT=27015
-export CSSPORT=27016
+export CSSPORT=27015
+export TF2PORT=27016
 export CSGOPORT=27017
 export INSPORT=27018
 export RUSTPORT=28015
