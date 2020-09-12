@@ -1,2 +1,2 @@
 #!/bin/bash
-$HOME/gmod/srcds_run -game garrysmod +map gm_flatgrass
+$HOME/gmod/srcds_run -game garrysmod +port $GMODPORT +map gm_flatgrass 
